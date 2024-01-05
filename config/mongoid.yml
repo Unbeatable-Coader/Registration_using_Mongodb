@@ -1,0 +1,18 @@
+development:
+  clients:
+    default:
+      database: registration_development
+      hosts:
+        - localhost:27017
+      options:
+      server_selection_timeout: 1
+test:
+  clients:
+    default:
+      database: registration_test
+      hosts:
+        - localhost:27017
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
